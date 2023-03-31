@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #F5ABC9;
+    color: gray;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    height: 30rem;
+    margin-bottom: 2rem;
+}
+
+/* Main Section */
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    min-width: 340px;
+    padding: 5rem 0;
+}
+
+/* Tabs Styling */
+.tabs {
+    background: #ffe5e2;
+    border-radius: .5rem;
+    grid-template-rows: auto 1fr;
+}
+
+/* Buttons Styling */
+.btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button {
+    padding: 1rem 0;
+    border: none;
+    font-size: 1rem;
+    background-color: #19376D;
+    color: #000;
+    cursor: pointer;
+    transition: all .3s linear;
+    letter-spacing: .25rem;
+}
+
+.button:hover:not(.live) {
+    background-color: #159895;
+    color: #fff;
+}
+
+.button:nth-child(1) {
+    border-top-left-radius: .5rem;
+}
+
+.button:nth-child(3) {
+    border-top-right-radius: .5rem;
+}
+
+.tabs-content {
+    padding: 2rem 1.5rem;
+}
+
+.content {
+    display: none;
+    /* padding: 2rem 0; */
+}
+
+.content h3 {
+    padding: 1.5rem 0;
+}
+
+.content p {
+    line-height: 1.5;
+    max-width: fit-content;
+    overflow: hidden;
+    padding: 0 .5rem;
+}
+
+.content.live {
+    display: block;
+}
+
+.button.live {
+    background:#ffe5e2;
+    color: #000;
+}
+
+/* Responsive */
+@media (min-width: 992px) {
+    .image {
+        margin-bottom: 0;
+    }
+
+    .section-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
